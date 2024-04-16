@@ -1,0 +1,298 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Montserrat;
+}
+
+/* START CUSTOM COLOR */
+:root {
+    --my_secondary_color: #FFCC00;
+    --my_primary_color: #DB5E00;
+}
+
+/* END CUSTOM COLOR */
+
+/* START OVERRIDE antd CSS */
+
+.ant-input-affix-wrapper .anticon.ant-input-password-icon {
+    font-size: 15px;
+}
+
+.ant-tabs-nav-list {
+    width: 100%;
+}
+
+.ant-tabs-tab {
+    width: 100%;
+}
+
+.ant-tabs-tab-btn {
+    width: 100%;
+    text-align: center;
+}
+
+.ant-tabs-tab-active {
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.ant-table-wrapper .ant-table-column-sorters {
+    display: flex;
+    flex: auto;
+    align-items: center;
+    justify-content: center;
+    column-gap: 4px;
+}
+
+.ant-table-wrapper .ant-table-column-title {
+    position: relative;
+    z-index: 1;
+    flex: 0;
+    white-space: nowrap;
+    color: #667085;
+    font-size: 12px;
+    font-weight: 500;
+
+}
+
+.ant-table-cell {
+    color: #667085;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.payment .ant-radio .ant-radio-inner {
+    border-color: var(--my_secondary_color);
+}
+
+.ant-select-compact-item .ant-select-selector {
+    padding: 12px 8px !important;
+    height: auto !important;
+}
+
+.ant-collapse-header {
+    padding: 0px 0px !important;
+    padding-inline-start: 0px !important;
+}
+
+.ant-collapse-header .ant-collapse-expand-icon {
+    height: auto !important;
+    align-items: start !important;
+    padding-inline-end: 12px;
+    margin-inline-start: 0px !important;
+}
+
+.ant-slider .ant-slider-rail {
+    background-color: rgba(255, 204, 0, 0.30) !important;
+}
+
+.ant-slider .ant-slider-track {
+    background-color: var(--my_secondary_color) !important;
+}
+
+.ant-slider .ant-slider-handle::after {
+    background-color: var(--my_secondary_color) !important;
+    box-shadow: 0 0 0 2px #ffffff !important;
+}
+
+@media not all and (min-width: 400px) {
+    .ant-tabs-tab-active {
+        font-size: 14px;
+    }
+
+    .ant-tabs .ant-tabs-tab {
+        font-size: 12px;
+    }
+
+    .ant-modal .ant-modal-content {
+        padding: 20px 12px !important;
+    }
+
+    .ant-modal {
+        max-width: calc(100vw - 4px) !important;
+    }
+}
+
+/* END OVERRIDE antd CSS */
+
+/* START OVERRIDE Tailwind CSS */
+.text-secondary {
+    color: var(--my_secondary_color);
+}
+
+.text-primary {
+    color: var(--my_primary_color);
+}
+
+.border-secondary {
+    border-color: var(--my_secondary_color);
+}
+
+.border-primary {
+    border-color: var(--my_primary_color);
+}
+
+.bg-primary {
+    background-color: var(--my_primary_color);
+}
+
+.bg-secondary {
+    background-color: var(--my_secondary_color);
+}
+
+/* END OVERRIDE Tailwind CSS */
+
+/* START CUSTOM CSS */
+.favorite-sort .ant-dropdown-menu .ant-dropdown-menu-item:nth-child(4),
+.favorite-sort .ant-dropdown-menu .ant-dropdown-menu-item:nth-child(1) {
+    cursor: text;
+    padding-left: 18px;
+}
+
+.bot-sign-bg-img {
+    background-image: url(../assets/svg/login_bg_mobile.svg);
+}
+
+.bot-sign-up-bg-img {
+    background-image: url(../assets/svg/bot_sign_up_mobile.svg);
+}
+
+.profile .ant-slider-rail {
+    background-color: #DFDFE6 !important;
+}
+
+.profile .ant-slider-handle::after {
+    background-color: #5B8DEF !important;
+    box-shadow: 0 0 0 2px #ffffff !important;
+}
+
+.profile .ant-slider-track {
+    background-color: #5B8DEF !important;
+}
+
+.hover-white:hover {
+    color: #ffffff !important;
+}
+
+a:hover {
+    color: var(--my_primary_color);
+}
+
+.font-source {
+    font-family: 'Source Sans 3', sans-serif;
+}
+
+.nav:hover {
+    color: var(--my_primary_color);
+}
+
+.bg-black-y-linear {
+    background: linear-gradient(180deg, #000 0%, rgba(107, 104, 104, 0.00) 48.44%, #000 100%);
+}
+
+.category-dropdown {
+    border-radius: 0px !important;
+}
+
+.category-dropdown .ant-dropdown-menu {
+    border-radius: 0px !important;
+    padding: 10px 22px !important;
+}
+
+.category-dropdown .ant-dropdown-menu .ant-dropdown-menu-item {
+    display: block !important;
+    padding: 12px 16px !important;
+}
+
+.category-dropdown .ant-dropdown-menu .ant-dropdown-menu-item .ant-dropdown-menu-title-content {
+    display: block !important;
+}
+
+.category-checkbox {
+    display: flex;
+    width: 100%;
+}
+
+.tag-checkbox span:nth-child(2),
+.category-checkbox span:nth-child(2) {
+    display: inline-block;
+    flex-grow: 1;
+}
+
+.category-collapse .ant-collapse-item .ant-collapse-header {
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+.category-collapse .ant-collapse-item .ant-collapse-header .ant-collapse-expand-icon {
+    color: var(--my_primary_color);
+}
+
+.category-collapse .ant-collapse-item .ant-collapse-content .ant-collapse-content-box {
+    padding: 29px 0px 26px 0px;
+    border-bottom: #DDD 2px solid;
+    margin-bottom: 30px;
+}
+
+.ant-collapse-borderless .ant-collapse-item {
+    border-bottom: 0px;
+}
+
+.category-search .ant-input-prefix svg {
+    width: 15px;
+    height: 15px;
+}
+
+.main-menu-category-collapse .ant-collapse-item .ant-collapse-header .ant-collapse-expand-icon {
+    display: none !important;
+}
+
+.main-menu-category-collapse .ant-collapse-item .ant-collapse-content .ant-collapse-content-box {
+    padding: 16px 0 0 0 !important;
+
+}
+
+
+
+@media not all and (min-width: 400px) {
+    .max-xs-hidden {
+        display: none !important;
+    }
+}
+
+@media all and (min-width: 400px) {
+    .min-xs-hidden {
+        display: none !important;
+    }
+
+    .sign-card {
+        backdrop-filter: blur(10.34321403503418px);
+        background: rgba(255, 255, 255, 0.73);
+        box-shadow: 0px 2.758190393447876px 48.268333435058594px 0px rgba(0, 0, 0, 0.10) inset;
+    }
+
+    .bot-sign-bg-img {
+        background-image: url(../assets/svg/login_background.svg);
+    }
+
+    .bot-sign-up-bg-img {
+        background-image: url(../assets/svg/login_background.svg);
+    }
+}
+
+@media not all and (min-width: 356px) {
+    .max-356-items-center {
+        align-items: center !important;
+    }
+
+    .max-356-justify-center {
+        justify-content: center !important;
+    }
+}
+
+/* END CUSTOM CSS */
